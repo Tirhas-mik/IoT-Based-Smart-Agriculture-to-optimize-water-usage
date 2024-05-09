@@ -35,7 +35,7 @@ This project involves selecting appropriate microcontrollers, designing the hard
 
 
 
-![IOT system modeling](./IoT-Based-Smart-Agriculture-to-optimize-water-usage/asset/iot-2.jpg)
+![Micro controller design](./IoT-Based-Smart-Agriculture-to-optimize-water-usage/asset/iot-2.jpg)
 
 - **Arduino Uno**: We use Arduino Uno emulator from proteus as microcontroller.
 - **Soil Moisture Sensor**: This sensor detects the amount of moisture in the soil by measuring the electrical resistance. As the soil dries out, the resistance increases. 
@@ -44,3 +44,57 @@ This project involves selecting appropriate microcontrollers, designing the hard
 
 - **LCD (Liquid Crystal Display)**: This display shows the readings from the sensors such as humidity, temperature, moisture and rain. 
 
+## System Architecture
+
+
+![Micro controller design](./IoT-Based-Smart-Agriculture-to-optimize-water-usage/asset/iot-1.jpg)
+
+## Installing the Project
+Download the project from this repository with the following command and go in the project directory:
+```bash
+   git clone https://github.com/Abrish-seng/IoT-Based-Smart-Agriculture-to-optimize-water-usage.git
+   cd IoT-Based-Smart-Agriculture-to-optimize-water-usage
+```
+
+## Setup the Raspberry Pi with Docker (recommended)
+To avoid having to install the required programs manually, you can also run the application with Docker in containers. To do this, carry out the following steps:
+
+```bash
+  curl -sSL https://get.docker.com | sh
+  sudo usermod -aG docker pi
+  sudo apt-get install -y libffi-dev libssl-dev
+  sudo apt-get install -y python3 python3-pip
+  sudo apt-get remove python-configparser
+  sudo pip3 install docker-compose
+```
+
+### Installing Node
+Node.js is an open source server environment with which we developed the backend and thus the logic for automated irrigation. The backend is the heart of the application and connects the sensor data, user interface, database and hardware (relay to the pump).
+
+Execute the following commands on the raspi in oder to install Node:
+
+```bash
+   wget https://nodejs.org/dist/v11.9.0/node-v11.9.0-linux-armv6l.tar.gz
+   tar -xvf node-v11.9.0-linux-armv6l.tar.gz
+   cd node-v11.9.0-linux-armv6l
+   sudo cp -R * /usr/local/
+```
+That the installation has worked can be checked with the two commands for version query of Node.js and NPM:
+```bash
+   node --version
+   npm --version
+``` 
+
+In order to install all dependencies in the frontend and backend, you need to run the following
+```bash
+   cd web-app
+   npm install
+   cd back-end-api
+   npm install
+``` 
+
+In order to install all dependencies for the mobile plateform (react-native) , you need to run the following
+```bash
+   cd mobile-app
+   npm install
+``` 
