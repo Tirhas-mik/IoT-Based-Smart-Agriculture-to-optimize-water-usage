@@ -98,3 +98,7 @@ In order to install all dependencies for the mobile plateform (react-native) , y
    cd mobile-app
    npm install
 ``` 
+
+### Author
+**Abrish-seng**
+- GitHub: [@Abrish-seng](https://github.com/Abrish-seng)
