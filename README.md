@@ -113,4 +113,5 @@ In order to install all dependencies for the mobile plateform (react-native) , y
 
 **Abrish-seng**
 
-- GitHub: [@Abrish-seng](https://github.com/Abrish-seng)
+- GitHub: [Abrahaley G/slassie](https://github.com/Abrish-seng)
+- GitHub: [Kedir Abdurahman](https://github.com/keddo)
