@@ -85,7 +85,7 @@ That the installation has worked can be checked with the two commands for versio
    npm --version
 ``` 
 
-In order to install all dependencies in the frontend and backend, you need to run the following
+In order to install all dependencies in the frontend and backend, you need to run the following:
 ```bash
    cd web-app
    npm install
@@ -93,7 +93,7 @@ In order to install all dependencies in the frontend and backend, you need to ru
    npm install
 ``` 
 
-In order to install all dependencies for the mobile plateform (react-native) , you need to run the following
+In order to install all dependencies for the mobile plateform (react-native) , you need to run the following:
 ```bash
    cd mobile-app
    npm install
