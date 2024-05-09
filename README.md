@@ -47,7 +47,7 @@ This project involves selecting appropriate microcontrollers, designing the hard
 ## System Architecture
 
 
-![system design](./IoT-Based-Smart-Agriculture-to-optimize-water-usage/asset/iot-1.jpg)
+![system design](/IoT-Based-Smart-Agriculture-to-optimize-water-usage/asset/iot-1.jpg)
 
 ## Installing the Project
 Download the project from this repository with the following command and go in the project directory:
